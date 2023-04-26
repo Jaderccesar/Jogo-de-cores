@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Mudança de Cor Aleatória</title>
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Mudança de Cor Aleatória</h1>
+    <p>Clique no botão abaixo para mudar a cor do fundo aleatoriamente:</p>
+    <button onclick="mudarCor()">Mudar Cor</button>
+
+    <script>
+      function mudarCor() {
+        // Gerar uma cor aleatória em hexadecimal
+        var cor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+        // Definir a cor de fundo da página para a cor aleatória
+        document.body.style.backgroundColor = cor;
+      }
+    </script>
+  </body>
+</html>
